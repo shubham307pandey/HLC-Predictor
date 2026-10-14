@@ -395,7 +395,7 @@ def main():
             required_columns=qsar_descriptors
         )
 
-        qsar_desc.to_excel("qsarfile.xlsx", index=False)
+        #qsar_desc.to_excel("qsarfile.xlsx", index=False)
 
         if Model_selection == "RR-QSPR Model":
             __, qsar_desc_std = standerdization(
@@ -459,7 +459,7 @@ def main():
             ]
 
             test_rasar = _safe_numeric_dataframe(test_rasar)
-            test_rasar.to_excel("rasarfile.xlsx", index=False)
+            #test_rasar.to_excel("rasarfile.xlsx", index=False)
 
             test_rasar_df = pd.concat(
                 [qsar_desc, test_rasar],
